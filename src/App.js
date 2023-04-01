@@ -62,7 +62,7 @@ export default function App() {
       .then(() => {
         console.log('User account signed in!');
       })
-      .catch((error) => {
+      .catch((error) => { // TODO: it's logging in even when the account doesn't exist
         console.log(error);
       });
     console.log("logged in");
