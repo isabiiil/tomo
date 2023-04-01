@@ -195,4 +195,8 @@ export default function App() {
 
     </NativeBaseProvider>
   );
+<<<<<<< Updated upstream
 };
+=======
+}*/
+>>>>>>> Stashed changes
