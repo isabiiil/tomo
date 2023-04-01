@@ -20,6 +20,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getFirestore(app);
+const auth = getAuth(app);
 
 export default function App() {
   const [user, setUser] = useState(null);
@@ -32,9 +33,9 @@ export default function App() {
 
   const auth = getAuth();
   const handleSignup = async () => {
+    console.log("signing up");
     if (pass1 === pass2) {
-    auth()
-      .createUserWithEmailAndPassword(auth, email, pass2)
+    createUserWithEmailAndPassword(auth, email, pass2)
       .then(() => {
         console.log('User account created & signed in!');
       })
@@ -56,14 +57,15 @@ export default function App() {
   }
 
   const handleLogin = async () => {
-    auth()
-      .signInWithEmailAndPassword(auth, email, password)
+    console.log("logging in");
+    signInWithEmailAndPassword(auth, email, password)
       .then(() => {
         console.log('User account signed in!');
       })
       .catch((error) => {
         console.log(error);
       });
+    console.log("logged in");
   }
 
   useEffect(() => {
@@ -195,8 +197,4 @@ export default function App() {
 
     </NativeBaseProvider>
   );
-<<<<<<< Updated upstream
 };
-=======
-}*/
->>>>>>> Stashed changes
