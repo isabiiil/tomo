@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
-function App() {
+const firebaseConfig = {
+  apiKey: "AIzaSyA2Caf5qtlM4SnJ5zjBU5Pl4GsRiI6fbOA", // TODO: obfuscate
+  authDomain: "hack-princeton-s23.firebaseapp.com",
+  projectId: "hack-princeton-s23",
+  storageBucket: "hack-princeton-s23.appspot.com",
+  messagingSenderId: "673819601662",
+  appId: "1:673819601662:web:8c392436b85f6e827893af",
+  measurementId: "G-TMC34ZQD9Z"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+export default App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Text>hello</Text>
   );
 }
-
-export default App;
