@@ -1,4 +1,3 @@
-
 function timeMinus(num) {
     const date = Date.now();
     const day = new Date(date);
@@ -12,5 +11,4 @@ export const data = [
     {name:'energy levels', details: 'lorem', timestamp: timeMinus(116.4)},
     {name:'medications', details: ['lorem', 'ipsum', 'dolorum'], timestamp: timeMinus(103)},
     {name:'symptoms', details: 'lorem', timestamp: timeMinus(98)},
-
 ];

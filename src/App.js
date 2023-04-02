@@ -77,6 +77,7 @@ export default function App() {
     };
     fetchData();
     console.log(data);
+    
   }, []);
 
   return (
@@ -194,7 +195,7 @@ export default function App() {
           <Text key={index}>{item.name}</Text>
         ))}
       </Center>
-
+    
     </NativeBaseProvider>
   );
 };
