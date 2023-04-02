@@ -1,19 +1,35 @@
 
+import React from 'react';
+/*const Mood=["Bad","Afraid","Angry","Disgust","Sad","Happy","Surprised","Insecure","Excited"];
+const Energy=["1","2","3","4","5","6","7","8","9","10"];
+ const Productivty=["1","2","3","4","5","6","7","8","9","10"];
+ const Social_Active=[true,false];
+ const did_you_eat=[true,false];
 
-/*const HappyToSad=["Happy","Mid","Sad"];
-  const sadtohappy=new Array(...HappyToSad).reverse();
+  //const sadtohappy=new Array(...HappyToSad).reverse();
   return (
     <div className='App'>
     <div style={{"display": "flex", "gap":"30px"}}>
-    { HappyToSad.map((element) => <p>{element}</p>) }
+    { Mood.map((element) => <p>{element}</p>) }
     </div>
   <div style={{"display": "flex", "gap":"30px"}}>
  
-              
-  
-    { sadtohappy.map((element) => <p>{element}</p>)}
+ { Energy.map((element) => <p>{element}</p>)}
   
     </div>
+    <div style={{"display": "flex", "gap":"30px"}}>
+      
+     {Productivty.map((element)=><p>{element}</p>)} 
+   
+     </div>
+     <div style ={{"display": "flex", "gap":"30px"}}>
+
+      {Social_Active.map((element)=><p>{element}</p>)};
+
+     </div>
+     <div style= {{"display": "flex", "gap":"30px"}}>
+     {did_you_eat.map((element)=><p>{element}</p>)}
+     </div>
     </div>
   );*/
 
@@ -74,7 +90,7 @@
                     }
                   >
                     <option value="">Select a mood</option>
-                    {moods.map((mood) => (
+                    {mood.map((mood) => (
                       <option key={mood} value={mood}>
                         {mood}
                       </option>
