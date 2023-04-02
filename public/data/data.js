@@ -5,10 +5,10 @@ function timeMinus(num) {
     return day;
 }
 export const data = [
-    {name:'sleep', details: '8 hours', timestamp: timeMinus(200)},
-    {name:'factors', details: ['lorem','ipsum'], timestamp: timeMinus(156.7 )},
-    {name:'mood', details: 'lorem', timestamp: timeMinus(130.87)},
-    {name:'energy levels', details: 'lorem', timestamp: timeMinus(116.4)},
-    {name:'medications', details: ['lorem', 'ipsum', 'dolorum'], timestamp: timeMinus(103)},
-    {name:'symptoms', details: 'lorem', timestamp: timeMinus(98)},
+    {name:'Sleep', details: '8 Hours 💤', timestamp: timeMinus(200)},
+    {name:'Activities', details: ['Classes 📚', 'Basketball 🏀', 'Coding 💻'], timestamp: timeMinus(156.7 )},
+    {name:'Mood', details: 'Sleepy 😴', timestamp: timeMinus(130.87)},
+    {name:'Energy Levels', details: '9/10 😄', timestamp: timeMinus(116.4)},
+    {name:'Medications', details: ['Med #1 🟡', 'Med #2 🔵', 'Med #3 ⚪'], timestamp: timeMinus(103)},
+    {name:'Symptoms', details: 'Symptom 😪', timestamp: timeMinus(98)},
 ];
